@@ -1,0 +1,6 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>밸리에이아이 스레드 연결</title>
+<style>body{font-family:-apple-system,sans-serif;padding:28px;background:#f5f4f0;color:#1b1a16}.b{background:#fff;border:1px solid #e6dcc8;border-radius:14px;padding:20px;word-break:break-all}code{font-size:15px}button{margin-top:14px;padding:12px 18px;border:0;border-radius:10px;background:#15241c;color:#fff;font-size:16px}</style></head><body>
+<h2>스레드 연결 코드</h2><div class="b"><div id="s"></div><code id="c"></code><br><button onclick="navigator.clipboard.writeText(document.getElementById('c').textContent);this.textContent='복사됨'">코드 복사</button></div>
+<p>이 페이지는 연결 확인용입니다. 화면이 보이면 Aside에 "연결 완료"라고 알려 주세요.</p>
+<script>const p=new URLSearchParams(location.search);const c=(p.get('code')||'').replace(/#_$/,'');document.getElementById('c').textContent=c||'(코드 없음)';document.getElementById('s').textContent=p.get('error_description')||'';</script>
+</body></html>
